@@ -1,4 +1,23 @@
 services:
+
+  disaster_insurance:
+    build: .
+    image: aviatorifeanyi/disaster_insurance:v1
+    container_name: disaster_insurance
+    depends_on:
+      - postgres
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USER: admin
+      DB_PASSWORD: admin
+      DB_NAME: disaster_
+    volumes:
+      - .:/app
+    networks:
+      - disaster
+    command: ["python", "main.py"]
+
   postgres:
     image: postgres:16.9
     container_name: postgres_db
