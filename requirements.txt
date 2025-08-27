@@ -1,3 +1,4 @@
+# Astro Runtime includes the following pre-installed providers packages: https://www.astronomer.io/docs/astro/runtime-image-architecture#provider-packages
 certifi==2025.8.3
 charset-normalizer==3.4.3
 idna==3.10

@@ -1,0 +1,4 @@
+project:
+    name: resilience-watch-disaster-response-analytics
+postgres:
+    port: 5433
